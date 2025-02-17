@@ -29,7 +29,7 @@ CREATE TABLE fabricante (
     );
 CREATE TABLE progFab (
     id_fab INT,
-    codigo INTEGER AUTOINCREMENT,
+    codigo INT,
     PRIMARY KEY (id_fab, codigo)
     );
 CREATE TABLE cliente (
