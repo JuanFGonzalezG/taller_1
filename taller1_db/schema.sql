@@ -44,7 +44,7 @@ CREATE TABLE registro (
     codigo INT,
     PRIMARY KEY (cif, dni, codigo)
     );
-INSERT INTO programa VALUES 
+INSERT INTO programa (nombre, versión) VALUES 
     ('Aplication Server', '9i'),
     ('Database', '8i'),
     ('Database', '9i'),
@@ -65,27 +65,27 @@ INSERT INTO programa VALUES
     ('OS/2', '10'),
     ('JBuilder', 'X'),
     ('La prisión', '10');
-INSERT INTO fabricante VALUES
+INSERT INTO fabricante (nombre, pais) VALUES
     ('Oracle', 'Estados Unidos'),
     ('Microsoft', 'Estados Unidos'),
     ('IBM', 'Estados Unidos'),
     ('Dinamic', 'España'),
     ('Borland', 'Estados Unidos'),
     ('Symantec', 'Estados Unidos');
-INSERT INTO almacenes VALUES
+INSERT INTO almacenes (nombre, ciudad) VALUES
     ('El Corte Inglés', 'Sevilla'),
     ('El Corte Inglés', 'Madrid'),
     ('Jump', 'Valencia'),
     ('Centro Mail', 'Sevilla'),
     ('FNAC', 'Barcelona');
-INSERT INTO cliente VALUES
+INSERT INTO cliente (nombre, edad) VALUES
     ('Pepe Pérez', 45),
     ('Juan González', 45),
     ('Maria Gómez', 33),
     ('Javier Casado', 18),
     ('Nuria Sánchez', 29),
     ('Antonio Navarro', 58);
-INSERT INTO progFab VALUES 
+INSERT INTO progFab (id_fab, codigo) VALUES 
     (1,1),
     (1,2),
     (1,3),
@@ -106,7 +106,7 @@ INSERT INTO progFab VALUES
     (3,18),
     (5,19),
     (4,20);
-INSERT INTO progAlma VALUES
+INSERT INTO progAlma (cif,codigo,cantidad) VALUES
     (1,1,10),
     (1,2,11),
     (1,6,5),
@@ -126,7 +126,7 @@ INSERT INTO progAlma VALUES
     (5,17,3),
     (5,19,6),
     (5,8,8);
-INSERT INTO registro VALUES
+INSERT INTO registro (cif,dni,codigo,medio) VALUES
     (1,1,1, 'Internet'),
     (1,3,4, 'Tarjeta postal'),
     (4,2,10, 'Teléfono'),
